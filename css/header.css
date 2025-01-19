@@ -1,0 +1,56 @@
+/* تنسيق شريط التنقل */
+.nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bkgColor2);
+    border: white 1px solid;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav__item {
+    position: relative; 
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+
+.nav__link:hover {
+    color: #ff6347; 
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6347;
+    transition: width 0.3s ease;
+}
+
+.nav__link:hover::after {
+    width: 100%; 
+}
