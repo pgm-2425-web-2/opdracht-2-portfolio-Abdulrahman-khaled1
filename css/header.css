@@ -54,3 +54,16 @@
 .nav__link:hover::after {
     width: 100%; 
 }
+
+@media (min-width: 768px) {
+    .nav {
+        height: 6rem;
+        border: 2px solid #ccc;
+    }
+
+    .nav__item {
+        font-size: 4rem;
+        padding: 5rem;
+    }
+
+ }

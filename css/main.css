@@ -104,21 +104,17 @@ aside {
     display: none;
 }
 @media (min-width: 768px) {
-    .nav {
-        height: 6rem;
-        border: 2px solid #ccc;
-    }
-
-    .nav__item {
-        font-size: 4rem;
-        padding: 5rem;
-    }
   .hero {
     
     top: 6rem;
   }
 
   .hero img {
-    width: 70%;
+    
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    
+
+
 }
  }
