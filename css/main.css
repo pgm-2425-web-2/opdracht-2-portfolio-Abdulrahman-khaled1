@@ -22,6 +22,7 @@ html {
 }
 
 .hero img {
+    filter: blur(13px);
     height: auto;
     margin: 1rem ;
    border-radius: 3rem;
@@ -33,6 +34,10 @@ html {
     border: 2px solid #ccc; 
 }
 
+.hero img:hover {
+    filter: blur(0);
+    transition: filter .6s ease;
+}
 .hero__text {
     padding-left: 0.5rem;
 
