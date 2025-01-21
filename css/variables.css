@@ -4,5 +4,8 @@
     --titlesColor: hsl(0, 0%, 0%);
     --bkgColor2:hsl(185, 25%, 55%);
     --txtColor2: hsl(0, 0%, 100%);
+    --bkgDark: hsl(0, 0%, 12%);
+    --txtDark:hsl(218, 100%, 83%);
+    --testColor:rgb(14, 36, 38);
 }
 

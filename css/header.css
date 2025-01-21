@@ -1,5 +1,5 @@
-/* تنسيق شريط التنقل */
 .nav {
+    margin-bottom: 2rem;
     position: fixed;
     width: 100%;
     height: auto;
@@ -11,6 +11,9 @@
     border: white 1px solid;
 }
 
+main{
+    padding-top: 3.8rem; /* the height of nav */
+}
 .nav__list {
     list-style: none;
     display: flex;
@@ -56,6 +59,9 @@
 }
 
 @media (min-width: 768px) {
+    main{
+        padding-top: 6rem;
+    }
     .nav {
         height: 6rem;
         border: 2px solid #ccc;
