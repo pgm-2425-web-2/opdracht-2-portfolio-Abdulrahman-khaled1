@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdulrahman Portfolio</title>
-    <link rel="stylesheet" href="./css/reset.css" >
-    <link rel="stylesheet" href="./css/main.css" >
-    <link rel="stylesheet" href="./css/header.css" >
-    <link rel="stylesheet" href="./css/variables.css" >
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
   </head>
 
   <body>
@@ -23,16 +23,20 @@
 
     <main>
       <section class="hero">
-        <img src="./images/profile_foto.webp" alt="" >
+        <picture>
+          <source srcset="./images/avif/profile_foto.avif" type="image/avif" />
+          <source srcset="./images/webp/profile_foto.webp" type="image/webp" />
+          <img src="./images/jpg/profile_foto.jpg" alt="Profile photo" />
+        </picture>
 
         <div class="hero__text">
           <h1 class="hero__name">
-            <span class="hero__name--first"> Abdulrahman </span><br >
+            <span class="hero__name--first"> Abdulrahman </span><br />
             <span class="hero__name--last">Khaled</span>
           </h1>
 
           <p>
-            Student graduaat programmeren : <br >
+            Student graduaat programmeren : <br />
             Artevelde Hogeschool
           </p>
         </div>
@@ -62,65 +66,108 @@
       <section class="skills__container">
         <h1 class="skill__title">Kennis</h1>
         <div class="skills">
-
-        <div class="skill">
-
+          <div class="skill">
             <span>HTML</span>
             <div class="blocks">
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
             </div>
-        </div>
-        <div class="skill">
-
+          </div>
+          <div class="skill">
             <span>CSS</span>
             <div class="blocks">
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
             </div>
-
-        </div>
-        <div class="skill">
-
+          </div>
+          <div class="skill">
             <span>JS</span>
             <div class="blocks">
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-              
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
             </div>
-
+          </div>
         </div>
-    </div>
       </section>
       <section class="projects">
         <h1 class="project__title">Projects</h1>
-        <div class="project1"><img src="./images/pexels.avif" alt="Project Foto"></div>
-        <div class="project2"><img src="./images/stem.avif" alt="Project Foto"></div>
-        <h2 class="highlight">Projects</h2>
-        <div class="project3"><img src="./images/pexels-phone.avif" alt="Project Foto"></div>
-        <div class="project4"><img src="./images/facebook-project.avif" alt="Project Foto"></div>
-        <div class="project5"><img src="./images/best-2024.avif" alt="Project Foto"></div>
+        <div class="project1">
+          <picture>
+            <source srcset="./images/avif/pexels.avif" type="image/avif" />
+            <source srcset="./images/webp/pexels.webp" type="image/webp" />
+            <img src="./images/jpg/pexels.jpg" alt="Project Foto" />
+          </picture>
+        </div>
+
+        <div class="project2">
+          <picture>
+            <source srcset="./images/avif/stem.avif" type="image/avif" />
+            <source srcset="./images/webp/stem.webp" type="image/webp" />
+            <img src="./images/jpg/stem.jpg" alt="Project Foto" />
+          </picture>
+        </div>
+
+        <div class="project3">
+          <picture>
+            <source
+              srcset="./images/avif/pexels-phone.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./images/webp/pexels-phone.webp"
+              type="image/webp"
+            />
+            <img src="./images/jpg/pexels-phone.jpg" alt="Project Foto" />
+          </picture>
+        </div>
+
+        <div class="project4">
+          <picture>
+            <source
+              srcset="./images/avif/facebook-project.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./images/webp/facebook-project.webp"
+              type="image/webp"
+            />
+            <img src="./images/jpg/facebook-project.jpg" alt="Project Foto" />
+          </picture>
+        </div>
+
+        <div class="project5">
+          <picture>
+            <source srcset="./images/avif/best-2024.avif" type="image/avif" />
+            <source srcset="./images/webp/best-2024.webp" type="image/webp" />
+            <img src="./images/jpg/best-2024.jpg" alt="Project Foto" />
+          </picture>
+        </div>
+
         <div class="project video">
-          <video src="./videos/Digital Information.mp4" autoplay muted loop></video>
+          <video
+            src="./videos/Digital_Information.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
         </div>
       </section>
 
@@ -140,14 +187,28 @@
           <!-- Naam-->
           <div class="form__group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
             <span class="error" id="nameError">This field is required</span>
           </div>
           <!-- Email-->
           <div class="form__group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <span class="error" id="emailError">Please enter a valid email</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <span class="error" id="emailError"
+              >Please enter a valid email</span
+            >
           </div>
           <!-- Reden -->
           <div class="form__group">
@@ -163,14 +224,19 @@
           <!-- Bericht -->
           <div class="form__group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
             <span class="error" id="messageError">This field is required</span>
           </div>
           <!-- verzenden button-->
           <button type="submit" class="form__button">Send</button>
         </form>
       </section>
-      
     </main>
 
     <footer></footer>
