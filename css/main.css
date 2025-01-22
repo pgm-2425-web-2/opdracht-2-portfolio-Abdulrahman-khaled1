@@ -644,3 +644,13 @@ select:focus {
 }
 
 /* End "Contact" section */
+
+/* Start "Footer" section */
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--bkgDark);
+  color: white;
+}
