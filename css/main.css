@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:wght@250&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:wght@250&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+GB+S:wght@250&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
     font-family: 'lora', sans-serif;
 }
 
@@ -11,7 +13,7 @@ html {
 
 .hero {
     width: 100%;
-    padding-top:1rem ;
+    padding-top: 1rem;
     top: 3rem;
     display: flex;
     flex-direction: column;
@@ -23,20 +25,20 @@ html {
 .hero img {
     filter: blur(13px);
     height: auto;
-    margin: 1rem ;
-   border-radius: 3rem;
-    width: 95%; 
-    max-height: auto; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.555); 
-    border: 2px solid #ccc; 
+    margin: 1rem;
+    border-radius: 3rem;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.555);
+    border: 2px solid #ccc;
 }
 
 .hero img:hover {
     filter: blur(0);
     transition: filter .6s ease;
 }
+
 .hero__text {
     padding-left: 0.5rem;
 
@@ -52,33 +54,34 @@ html {
     line-height: 0.8;
 }
 
-.hero__name--first, .hero__name--last {
-    display: block; 
-    transition: transform 0.5s ease, color 0.5s ease; 
+.hero__name--first,
+.hero__name--last {
+    display: block;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
 
 .hero__name:hover .hero__name--first {
-    transform: translateY(20px) rotate(15deg); 
-    color: hsl(10, 80%, 56%); 
+    transform: translateY(20px) rotate(15deg);
+    color: hsl(10, 80%, 56%);
 }
 
 .hero__name:hover .hero__name--last {
-    transform: translateY(-20px) rotate(-15deg); 
-    color: hsl(10, 80%, 56%); 
+    transform: translateY(-20px) rotate(-15deg);
+    color: hsl(10, 80%, 56%);
 }
 
 .hero__name::after {
     content: "";
     display: block;
-    width: 100%; 
-    height: 2px; 
-    background-color: var(--txtColor2); 
-    margin-bottom:1rem; 
+    width: 100%;
+    height: 2px;
+    background-color: var(--txtColor2);
+    margin-bottom: 1rem;
     max-width: 35rem;
 }
 
-.hero p{
+.hero p {
     font-size: 2rem;
     font-family: 'lora', sans-serif;
     font-weight: 500;
@@ -107,45 +110,48 @@ html {
 aside {
     display: none;
 }
+
 @media (min-width: 768px) {
-  .hero {
-    
-    top: 6rem;
-  }
+    .hero {
 
-  .hero img {
-    
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    
+        top: 6rem;
+    }
+
+    .hero img {
+
+        aspect-ratio: 1/1;
+        object-fit: contain;
 
 
+
+    }
 }
- }
 
 
 /* Start Over section */
 .over {
     background: linear-gradient(45deg, #ff6f61, #39154f, #36678f, #4caf50);
-    background-size: 400% 400%; /* لجعل التدرج أكبر ويتحرك */
+    background-size: 400% 400%;
     animation: gradientAnimation 6s ease infinite;
     width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
-   padding: 1rem;
-   color: var(--txtColor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--txtColor2);
 }
 
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -161,12 +167,17 @@ aside {
 }
 
 
-   @keyframes glow {
-    0%, 100% {
+@keyframes glow {
+
+    0%,
+    100% {
         opacity: 0;
     }
+
+
     50% {
-        opacity: 0.9;color: #f9f5f4;
+        opacity: 0.9;
+        color: #f9f5f4;
     }
 }
 
@@ -184,17 +195,20 @@ aside {
     .over {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-      
+
     }
 
-    .over__content{
+
+    .over__content {
         border: #f9f5f4 0.5rem solid;
         position: relative;
     }
+
+
     .over__text {
         max-width: 50rem;
         font-size: 2rem;
@@ -202,11 +216,12 @@ aside {
         line-height: 1.4;
         font-family: 'lora', sans-serif;
         font-weight: 700;
-    
+
     }
 
+
     .over__title {
-        
+
         padding: 0;
         margin: 0;
         z-index: 1;
@@ -217,7 +232,8 @@ aside {
         font-size: 6rem;
     }
 
-    .over__title::before, .Over__title::after {
+    .over__title::before,
+    .Over__title::after {
         content: "OVER  OVER OVER OVER OVER OVER OVER OVER OVER";
         position: absolute;
         top: 70%;
@@ -226,24 +242,116 @@ aside {
         animation: glow 2s infinite;
         overflow: hidden;
         line-height: 1;
-        
+
     }
 
 
 }
 
- 
+
 @media (min-width: 768px) {
     .over {
         justify-content: space-around;
     }
+
     .over__content {
         border: none;
         border-right: #f9f5f4 1rem solid;
         border-bottom: #f9f5f4 1rem solid;
-        overflow: hidden;
     }
 }
- 
+
 /* End Over section */
 
+
+/* Start "Skills" section */
+
+.skills__container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-width: 367px;
+    color: aliceblue;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(7, 70, 81), rgb(45, 202, 105))  rgb(112, 31, 110);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.skill__title {
+    font-size: 4rem;
+}
+.skills {
+    display: grid;
+    gap: 10px;
+
+}
+
+.skill {
+    display: grid;
+    grid-template-columns:  auto ;
+    gap: 10px 10px;
+    place-items: center;
+    padding: 1rem;
+
+}
+
+.skill span {
+    font-size: 2rem;
+}
+.blocks {
+    width: 100%;
+    gap: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* ---responsive-- */
+
+@media screen and (min-width: 768px) {
+.skills__container {
+    min-width: 890px;
+    grid-template-columns:  1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.skills {
+    padding: 4rem;
+}
+
+.skill__title {
+    font-size:  7rem;
+}
+
+
+.skill {
+    grid-template-columns:  auto auto;
+}
+
+
+}
+/* End "Skills" section */
