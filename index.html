@@ -111,6 +111,66 @@
         </div>
     </div>
       </section>
+      <section class="projects">
+        <h1 class="project__title">Projects</h1>
+        <div class="project1"><img src="./images/pexels.avif" alt="Project Foto"></div>
+        <div class="project2"><img src="./images/stem.avif" alt="Project Foto"></div>
+        <h2 class="highlight">Projects</h2>
+        <div class="project3"><img src="./images/pexels-phone.avif" alt="Project Foto"></div>
+        <div class="project4"><img src="./images/facebook-project.avif" alt="Project Foto"></div>
+        <div class="project5"><img src="./images/best-2024.avif" alt="Project Foto"></div>
+        <div class="project video">
+          <video src="./videos/Digital Information.mp4" autoplay muted loop></video>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h1 class="contact__title">
+          <span>c</span>
+          <span>o</span>
+          <span>n</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>t</span>
+          <span>u</span>
+          <span>s</span>
+        </h1>
+        <form class="contact__form" action="#" method="POST">
+          <!-- Naam-->
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <span class="error" id="nameError">This field is required</span>
+          </div>
+          <!-- Email-->
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <span class="error" id="emailError">Please enter a valid email</span>
+          </div>
+          <!-- Reden -->
+          <div class="form__group">
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason" required>
+              <option value="" disabled selected>Select a reason</option>
+              <option value="question">General Question</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+            <span class="error" id="reasonError">Please select a reason</span>
+          </div>
+          <!-- Bericht -->
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <span class="error" id="messageError">This field is required</span>
+          </div>
+          <!-- verzenden button-->
+          <button type="submit" class="form__button">Send</button>
+        </form>
+      </section>
+      
     </main>
 
     <footer></footer>
